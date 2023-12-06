@@ -1,0 +1,305 @@
+footer{
+    display: grid;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    background-color: var(--header-color);
+    margin-top: 2rem;
+    margin-left: 0;
+}
+
+footer .container{
+    width: 100%;
+    display: grid;
+    background-color: transparent;
+}
+footer .container *{
+    background-color: transparent;
+}
+.copyrightText, .copyrightText p{
+    background-color: transparent;
+}
+.copyrightText{
+    width: 100%;
+    margin-top: 1rem;
+    grid-column: span 3;
+    text-align: center;
+    border-top: 3px solid #463485;
+}
+footer .container .sec {
+    padding: 1rem;
+}
+
+footer .container .sec h2{
+    position: relative;
+    color:#fff;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+footer .container .sec h2::before{
+    content:'';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #fff;
+    z-index: 19;
+}
+footer .container .sec p{
+    color:#fff;
+}
+.quicklinks{
+    position: relative;
+}
+.quicklinks li{
+    list-style: none;
+}
+.quicklinks li a{
+    margin-bottom: 1.2rem;
+    display: inline-block;
+}
+footer .info{
+    position: relative;
+}
+footer .info li{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 1.5rem;
+}
+footer a, footer p, footer span {
+    color: #fff;
+}
+
+
+/*//////////////////////////////////////*/
+.social{
+    margin-top: 10px;
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.social a{
+    position: relative;
+    background-color: transparent;
+    box-shadow: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social .icon{
+    width: 45px;
+    height: 45px;
+    position: relative;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 0 0 20px 5px #00000050;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.social .icon img{
+    z-index: 3;
+    background-color: transparent;
+    filter: invert(100%);
+}
+.social .icon::before{
+    content: '';
+    width: 50px;
+    height: 50px;
+    position:absolute;
+    top:-150%;
+    transition: 0.5s ease-out;
+}
+.social .icon:hover{
+    cursor: pointer;
+}
+.social .icon:hover::before{
+    transform: translateY(130%);
+}
+.social .icon:nth-child(1):before{
+    background: linear-gradient(#ff0000, #ff6600);
+}
+.social .icon:nth-child(2):before{
+    background: linear-gradient(#aaff00, #00d9ff);
+}
+.social .icon:nth-child(3):before{
+    background: linear-gradient(#ff00f7, #aa00ff);
+}
+.social .icon:nth-child(4):before{
+    background: linear-gradient(#ffe600, #ff5100);
+}
+.social .icon:nth-child(5):before{
+    background: linear-gradient(#0400ff, #00ffc3);
+}
+
+
+@media screen and (max-width: 768px){   
+    footer a, footer p, footer span{
+        font-size: 1.2rem;
+    }
+    footer .tel, footer .email {
+        font-size: 1rem;
+    }
+    footer .container .sec h2{
+        font-size: 1.5rem;
+    }
+    footer .container{
+        grid-gap: 0;
+        grid-template-columns: 1fr;
+    }
+    footer .info li{
+        margin-bottom: 4%;
+    }
+    .quicklinks li a{
+        margin-bottom: 5%;
+    }
+    footer .container .sec h2{
+        margin-bottom: 6%;
+    }
+    .copyrightText{
+        grid-column: span 1;
+    }
+    footer [id="aboutus"]{
+        grid-column: span 1;
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 1000px){   
+    footer a, footer p, footer span{
+        font-size: 1.2rem;
+    }
+    footer .tel, footer .email {
+        font-size: 1.2rem;
+    }
+    footer .container .sec h2{
+        font-size: 1.5rem;
+    }
+    footer .container{
+        grid-gap: 3%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+    footer .info li{
+        margin-bottom: 4%;
+    }
+    .quicklinks li a{
+        margin-bottom: 5%;
+    }
+    footer .container .sec h2{
+        margin-bottom: 0;
+    }
+    .copyrightText{
+        grid-column: span 2;
+    }
+    footer [id="aboutus"]{
+        grid-column: span 2;
+    }
+
+}
+@media screen and (min-width: 1000px) and (max-width: 1500px){ 
+    footer a, footer p, footer span{
+        font-size: 1.2rem;
+    }
+    footer .tel, footer .email {
+        font-size: 1.2rem;
+    }
+    footer .container .sec h2{
+        font-size: 1.5rem;
+    }
+    
+    footer .container{
+        grid-template-columns: 3fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 1.5rem;
+    }
+    footer .info li{
+        margin-bottom: 4%;
+    }
+    .quicklinks li a{
+        margin-bottom: 5%;
+    }
+    footer .container .sec h2{
+        margin-bottom: 0;
+    }
+    .copyrightText{
+        grid-column: span 5;
+    }
+    footer [id="aboutus"]{
+        grid-column: span 1;
+    }
+
+}
+@media screen and (min-width: 1501px){
+    footer a, footer p, footer span{
+        font-size: 1.2rem;
+    }
+    footer .tel, footer .email {
+        font-size: 0.7rem;
+    }
+    footer .container .sec h2{
+        font-size: 1.6rem;
+    }
+
+    footer .container{
+        grid-template-columns: 3fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 1.5rem;
+    }
+    footer .info li{
+        margin-bottom: 4%;
+    }
+    .quicklinks li a{
+        margin-bottom: 5%;
+    }
+    footer .container .sec h2{
+        margin-bottom: 0;
+    }
+    .copyrightText{
+        grid-column: span 5;
+    }
+    footer [id="aboutus"]{
+        grid-column: span 1;
+    }
+    .social .icon{
+        width: 55px;
+        height: 55px;
+    }
+    .social .icon img{
+        width: 35px;
+    }
+    .social .icon::before{
+        content: '';
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media screen and (min-width: 1600px){
+    footer a, footer p, footer span{
+        font-size: 2rem;
+    }
+    footer .tel, footer .email {
+        font-size: 1.2rem;
+    }
+    footer .container .sec h2{
+        font-size: 3rem;
+    }
+    .social .icon{
+        width: 70px;
+        height: 70px;
+    }
+    .social .icon img{
+        width: 45px;
+    }
+    .social .icon::before{
+        content: '';
+        width: 80px;
+        height: 80px;
+    }
+}

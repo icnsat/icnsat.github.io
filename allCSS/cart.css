@@ -1,0 +1,266 @@
+
+:root{
+    --header-color: #9b8cbf;
+    --title-color:#ffffff;
+}
+
+*{
+    background-color: #665c70;
+}
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+body{
+    margin: 0;
+}
+
+
+main{
+    margin-top: 100px;
+}
+
+h2{
+    color:var(--title-color);
+    font-family: 'Alice', serif;
+    margin: 10px 0px 20px 10px;
+}
+h3{
+    color:#0e1e53;
+    font-family: 'Alice', serif;
+    margin: 10px 0px 20px 10px;
+}
+
+a { 
+    text-decoration: none;
+    color:#090e21;
+}
+    
+abbr:hover, a:hover{ color:#d164e4 }
+
+section{
+    width: 80%;
+}
+
+/*-----------------------------------------------------*/
+
+main h2{
+    margin-top: 3rem;
+}
+
+.cart {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0px;
+    gap: 15px;
+    margin-bottom: 2rem ;
+}
+
+.cart-items-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0px;
+    gap: 15px;
+}
+
+.cart-item {
+    display: grid;
+    grid-template-columns: auto 12fr 2fr;
+    grid-template-areas:
+    "img name delete"
+    "img price quantity";
+    gap: 15px;
+    align-items: center;
+    justify-items: center;
+
+    background: #ddd2f0;
+    width: 100%;
+    border-radius: 14px;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/*-----------------------------------------------------------*/
+
+.cart-item > img {
+    grid-area: img;
+    padding-left: 15px;
+}
+
+.cart-item img{
+    background-color: transparent;
+}
+
+.cart-item .name {
+    grid-area: name;
+    background-color: transparent;
+    background: #9b8cbf;
+    border-radius: 15px;
+    text-align: center;
+    width: 90%;
+    justify-self: center;
+    margin: 0;
+    padding: 5px 0 5px 0;
+}
+
+/*-----------------------------------------------------------*/
+
+.cart-item .quantity-container {
+    grid-area: quantity;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+}
+
+.quantity-container p {
+    width: 50px;
+    height: 25px;
+    margin: 0;
+    background-color: transparent;
+    text-align: center;
+}
+
+.quantity-container button {
+    background: transparent;
+    border: none;
+    border-radius: 45%;
+    padding: 0;
+    background-color: transparent;
+    transition: 0.25s;
+    width: 28px;
+    height: 28px;
+}
+
+.quantity-container button:hover {
+    background: #907bbd;
+}
+
+.quantity-container .plus {
+    margin-right: 5px;
+    background-color: transparent;
+}
+
+/*-----------------------------------------------------------*/
+
+.cart-item .price {
+    grid-area: price;
+    background-color: transparent;
+    text-align: center;
+}
+
+.cart-item .price p{
+    background-color: transparent;
+}
+
+/*-----------------------------------------------------------*/
+
+.cart-item .delete {
+    grid-area: delete;
+    justify-self: center;
+    background-color: transparent;
+}
+
+.delete button {
+    background: transparent;
+    padding: 5px;
+    border: none;
+    border-radius: 7px;
+    transition: 0.25s;
+}
+
+.delete button:hover {
+    background: #907bbd;
+}
+
+/*-----------------------------------------------------------*/
+
+.total {
+    display: flex;
+    justify-content: center;
+    column-gap: 4rem;
+}
+
+.total .order {
+    background: #b0a0d4;
+    color: #dedede;
+    padding: 10px 25px 10px 25px;
+    border-radius: 15px;
+    transition: 0.35s;
+    display: none;
+}
+.total .clear-button {
+    background: #8171a5;
+    color: #dedede;
+    padding: 10px 25px 10px 25px;
+    border-radius: 15px;
+    transition: 0.35s;
+    display: none;
+}
+
+.total .order:hover {
+    background: rgb(123, 189, 163);
+}
+.total .clear-button:hover {
+    background: rgb(189, 123, 137);
+}
+
+
+.total p, .total a {
+    background-color: transparent;
+    /*width: 150px*/;
+    color:#fff;
+}
+
+.total-quantity, .total-amount {
+    background-color: transparent;
+    width:auto;
+}
+
+
+@media screen and (max-width: 768px){ 
+    .cart-item {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "name name"
+        "img delete"
+        "img price"
+        "img quantity";
+        column-gap: 10px;
+    }
+    .total .total-amount {
+        grid-area: total;
+    }
+    .total .clear-button {
+        grid-area: clearButton;
+    }
+    .total .order {
+        grid-area: order;
+    }
+    .total .total-quantity {
+        grid-area: totalQuantity;
+    }
+    .total {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "clearButton clearButton"
+        "total totalQuantity"
+        "order order";
+        justify-items: center;
+        justify-content: center;
+        justify-self: center;
+        align-self: center;
+        column-gap: 2rem;
+    }
+
+}
+
+@media screen and (max-width: 500px){
+    .cart-item > img {
+        padding-left: 0px;
+        width: calc(7rem + 5%);
+    }
+}

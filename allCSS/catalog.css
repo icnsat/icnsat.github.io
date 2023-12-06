@@ -1,0 +1,161 @@
+/*-----------------------------------------------------------*/
+
+.catalog{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0px;
+    margin-bottom: 3rem;
+    gap: 15px;
+}
+
+.catalog-item {
+    background: #ddd2f0;
+    width: 100%;
+    border-radius: 10px;
+
+    display: grid;
+    grid-template-areas:
+    "img name purchase"
+    "img specifications purchase";
+    grid-template-rows: 1fr 3fr;
+    grid-template-columns: auto 6fr 1fr;
+    gap: 15px;
+
+    align-items: center;
+    justify-items: center;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.catalog-item img {
+    padding-left: 15px;
+    background-color: transparent;
+    grid-area: img;
+}
+
+.catalog-item .name {
+    grid-area: name;
+    background-color: transparent;
+    background: #9b8cbf;
+    border-radius: 15px;
+    text-align: center;
+    width: 90%;
+    margin: 0;
+    padding: 5px 0 5px 0;
+}
+
+.catalog-item .specifications {
+    grid-area: specifications;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.catalog-item .specifications p{
+    background-color: transparent;
+}
+
+
+
+.catalog-item .purchase {
+    grid-area: purchase;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.catalog-item .purchase p{
+    background-color: transparent;
+}
+
+.purchase button {
+    background: #9b8cbf;
+    color: #dedede;
+    padding: 10px 25px 10px 25px;
+    border-radius: 15px;
+    transition: 0.35s;
+}
+
+.purchase button:hover {
+    background: #907bbd;
+}
+
+/*-----------------------------------------------------------*/
+
+.sort button {
+    background: #727272;
+    padding: 5px;
+    border: none;
+    border-radius: 7px;
+    transition: 0.25s;
+}
+
+.sort button img{
+    background-color: transparent;
+}
+
+.sort button:hover {
+    background: #949494;
+}
+
+.control {
+    display: flex;
+    justify-content: space-between;
+}
+
+.control .form button {
+    background: #565656;
+    color: #dedede;
+    padding: 10px 25px 10px 25px;
+    border-radius: 15px;
+    transition: 0.35s;
+}
+
+.control .form button:hover {
+    background: #868686;
+}
+
+.control .form label, .control .form input{
+    color: #fff;
+}
+
+
+
+@media screen and (max-width: 768px){ 
+    .catalog-item {
+        width: 100%;
+        border-radius: 1rem;
+    
+        display: grid;
+        grid-template-areas:
+        "name name"
+        "img specifications"
+        "purchase purchase";
+        grid-template-rows: 1fr auto;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .catalog-item .specifications {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .catalog-item img {
+        padding-left: 0px;
+        width: calc(7rem + 5%);
+    }
+}

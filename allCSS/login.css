@@ -1,0 +1,190 @@
+main{
+    display: flex;
+    justify-content: center;
+}
+.login_form {
+    margin: 5rem 0 3rem 0;
+    width: 40%;
+    background: transparent;
+}
+.box-login_form{
+    position: relative;
+    background: transparent;
+    box-sizing: border-box;
+}
+.container-login_form{
+    position:relative;
+    width: 100%;
+    height: auto;
+    background: rgba(255, 255, 255, 0.241);
+    border-radius: 1rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(255,255,255,0.1);
+}
+.form1{
+    position:relative;
+    width: 100%;
+    height: 100%;
+    padding: 4%;
+    background: transparent;
+}
+.form1 h2{
+    position: relative;
+    color:var(--title-color);
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-left: 0;
+    background: transparent;
+    letter-spacing: 0.1rem;
+}
+.form1 form{
+    background-color: transparent;
+}
+.form1 h2::before{
+    content: '';
+    position: absolute;
+    bottom: -0.5rem;
+    width: 3.7rem;
+    height: 0.3rem;
+    background-color: var(--title-color);
+}
+.form1 .input_box{
+    width: 88%;
+    margin-top: 2%;
+    background-color: transparent;
+}
+.form1 .input_box input{
+    width: 100%;
+    background: rgba(187, 187, 187, 0.529);
+    border: none;
+    outline: none;
+    padding: 4% 7%;
+    border-radius: 25px;
+}
+.form1 .input_box_button{
+    background-color: transparent;
+    width: 85px;
+    margin-top: 2%;
+}
+.form1 .input_box_button input{
+    width: 100%;
+    background: rgba(255, 255, 255, 0.73);
+    border: none;
+    outline: none;
+    padding: 4% 7%;
+    border-radius: 25px;
+    color:#252525;
+    height: 30px;
+}
+.form1 input::placeholder{
+    color:#ffffff;
+}
+.form1 .forget, .form1 .registration{
+    background-color: transparent;
+    color:#ffffff;
+    font-size: 1.1rem;
+}
+.form1 .forget a, .form1 .registration a{
+    background-color: transparent;
+    color:#452d4b;
+    font-weight: 600;
+}
+.form1 .forget a:hover, .form1 .registration a:hover{
+    color:#d87fef;
+}
+
+
+.box-login_form .square{
+    position:absolute;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(48, 48, 48, 0.916);
+    background: rgba(255, 255, 255, 0.241);
+    border-radius: 10px;
+}
+.box-login_form .square:nth-child(1){
+    top: -20%;
+    left: 10%;
+    width: 15%;
+    height: 20%;
+    animation: animate-square_15  2s ease-in-out infinite;
+}
+.box-login_form .square:nth-child(2){
+    top:-10%;
+    right: 0%;
+    width: 20%;
+    height: 25%;
+    animation: animate-square_23  2s ease-in-out infinite;
+}
+.box-login_form .square:nth-child(3){
+    top: 50%;
+    left: -16%;
+    width: 20%;
+    height: 25%;
+    z-index: 103;
+    animation: animate-square_23  2s ease-in-out infinite;
+}
+.box-login_form .square:nth-child(4){
+    bottom: -5%;
+    left: 30%;
+    width: 10%;
+    height: 15%;
+    animation: animate-square_4 2s 0.3s ease-in-out infinite;
+}
+.box-login_form .square:nth-child(5){
+    top:70%;
+    right: -5%;
+    width: 15%;
+    height: 20%;
+    z-index: 103;
+    animation: animate-square_15  2s ease-in-out infinite;
+
+}
+@keyframes animate-square_15 {
+    0%{
+        transform: translateY(calc(50% - 1rem));
+    }
+    50%{
+        transform: translateY(calc(-20% + 0.3rem));
+    }
+    100%{
+        transform: translateY(calc(50% - 1rem));
+    }
+}
+@keyframes animate-square_23 {
+    0%{
+        transform: translateX(calc(-10% - 1rem));
+    }
+    50%{
+        transform: translateX(calc(-10% + 0.3rem));
+    }
+    100%{
+        transform: translateX(calc(-10% - 1rem));
+    }
+}
+@keyframes animate-square_4 {
+    0%{
+        transform: translateY(calc(-50% - 0.5rem));
+    }
+    50%{
+        transform: translateY(calc(-20% + 2rem));
+    }
+    100%{
+        transform: translateY(calc(-50% - 0.5rem));
+    }
+}
+
+
+@media screen and (max-width: 768px){ 
+    .login_form {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .login_form {
+        width: 75%;
+    }
+}
