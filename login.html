@@ -1,0 +1,114 @@
+<!DOCTYPE html> <!-- Определяет версию HTML, используемую в документе. В данном случае это HTML5. -->
+<html lang="ru">  <!--html - обозначает написание html кода; lang - объявляет основной язык страницы-->
+    <head> <!--Головной раздел-->
+        <meta charset="UTF-8"> <!--Объявление кодировки символов-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Настройки области просмотра-->
+        <title>Вход</title>
+        <link rel="icon" href="https://img.icons8.com/fluency-systems-regular/48/disney-1.png" alt="disney"/>
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="header.css">
+        <link rel="stylesheet" href="footer.css">
+        <link rel="stylesheet" href="login.css">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <a href="index.html" class="logo"><img src="https://upload.wikimedia.org/wikipedia/ru/d/dd/Disney_Logo.png" alt="Disney_logo" width="200" height="80"></a>
+            <h1 id="Topic1"><a href="index.html">The Walt Disney Company</a></h1>
+            
+            <div class="container_burger">
+                <input type="checkbox" id="burger">
+                <label for="burger">
+                    <span></span>
+                </label>
+                <nav class="header_nav">
+                    <ul class="menu_header_nav">
+                        <li class="nav_item_Login"><a href="login.html">Вход</a></li>
+                        <li class="nav_item_Registration"><a href="registration.html">Регистрация</a></li>
+                        <li class="nav_item_Catalog"><a href="cart.html">Каталог</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="login_form">
+                <div class="box-login_form">
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="container-login_form">
+                        <div class="form1">
+                            <h2>Вход</h2>
+                            <form id="form1" action="" method="get">
+                                <div class="input_box">
+                                    <input id="input_box1" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" type="email" name="email"  required placeholder="Почта">
+                                </div>
+                                <div class="input_box">
+                                    <input id="input_box2" type="password" name="password" required placeholder="Пароль">
+                                </div>
+                                <div class="input_box_button">
+                                    <input type="submit" value="Войти" onclick="login()">
+                                </div>
+                                <p class="forget">Забыли пароль? <a href="form.html">Нажмите здесь</a></p>
+                                <p class="registration">Ещё нет аккаунта? <a href="registration.html">Зарегистрироваться</a></p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="container">
+                 <div class="sec aboutus" id="aboutus">
+                     <h2>О нас</h2>
+                     <p class="textAboutUs">The Walt Disney Company — американская транснациональная медиакорпорация, основанная братьями Уолтером и Роем Дисней в 1923 году как небольшая анимационная студия, в данный момент являющаяся крупнейшим в мире медиаконгломератом в сфере индустрии развлечений.</p>
+                     <div class="social">
+                         <div class="icon">
+                             <a href="https://www.youtube.com/@disneyanimation/videos"><img src="https://cdn.icon-icons.com/icons2/788/PNG/512/youtube_icon-icons.com_65123.png" width="30"></a>
+                         </div>
+                         <div class="icon">
+                             <a href="https://twitter.com/Disney"><img src="https://www.freepnglogos.com/new-twitter-x-logo-transparent-png-4.png" width="27"></a>
+                         </div>
+                         <div class="icon">
+                             <a href="https://www.disney.com/"><img src="https://static-mh.content.disney.io/matterhorn/assets/favicon-94e3862e7fb9.ico"" width="30"></a>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="sec quicklinks">
+                     <h2>Ссылки</h2>
+                     <ul>
+                         <li><a href="login.html">Вход</a></li>
+                         <li><a href="registration.html">Регистрация</a></li>
+                         <li><a href="form.html">Связь с нами</a></li>
+                         <li><a href="cart.html">Магазин</a></li>
+                     </ul>
+                 </div>
+                 <div class="sec contact">
+                     <h2>Контакты</h2>
+                     <ul class="info">
+                         <li>
+                             <span>Проспект Вернадского, 78</span>
+                         </li>
+                         <li>
+                             <p class="tel"><a href="tel:+12345678900">+1 234 567 8900</a></p>
+                             <p class="tel"><a href="tel:+34464456900">+3 446 445 6900</a></p>
+                         </li>
+                         <li>
+                             <p class="email"><a href="mailto:superemail@mail.com">superemail@mail.com</a></p>
+                         </li>
+                     </ul>
+                 </div>
+             </div>
+             <div class="copyrightText">
+                 <p>Горновова Елизавета Ильинична. ИКБО-20-22</p>
+             </div>
+        </footer>
+        <script src="login.js"></script> 
+    </body>
+</html>
