@@ -12,4 +12,5 @@ function submit(){
         }
     }
     alert("Форма отправлена");
-    window.location.href = 'index.html';}
+    window.location.href = '/allHTML/main.html';
+}
