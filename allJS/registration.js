@@ -11,5 +11,5 @@ function registration(){
         }
     }
     alert("Вы успешно зарегистрировались!");
-    window.location.href = 'index.html';
+    window.location.href = '/allHTML/main.html';
 }
