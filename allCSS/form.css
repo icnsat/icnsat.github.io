@@ -183,10 +183,13 @@ main{
 }
 @media screen and (max-width: 400px){
     .contact_form {
-        width: 75%;
+        width: 80%;
     }
     .form1 h2{
-        font-size: 1rem;
+        font-size: 0.8rem;
+    }
+    .form1 h2::before{
+        width: 11rem;
     }
     .form1 input::placeholder, .form1 textarea::placeholder{
         font-size: 0.8rem;
