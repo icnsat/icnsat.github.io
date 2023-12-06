@@ -56,7 +56,7 @@ function updateCatalogDisplay(products) {
     for (let product of products) {
         container.innerHTML += `    
             <div class="catalog-item" id="${products.indexOf(product)}">
-                <img src="C:/Users/eliza/OneDrive/Рабочий стол/файлы универ/3 СЕМЕСТР/РКЧИР/ПР №12/${product.name}.jpg" width="150">
+                <img src="/allPNG/${product.name}.jpg" width="150">
                 <p class="name">${product.name}</p>
     
                 <div class="specifications">
@@ -78,15 +78,15 @@ function updateCatalogDisplay(products) {
         <div class="control">
             <div class="sort">
                 <button onclick="setDefault(products)">
-                    <img src="C:/Users/eliza/OneDrive/Рабочий стол/файлы универ/3 СЕМЕСТР/РКЧИР/ПР №12/sort.png" width="28px" height="28px">
+                    <img src="/allPNG/sort.png" width="28px" height="28px">
                 </button>
         
                 <button onclick="descendingSort(products)">
-                    <img src="C:/Users/eliza/OneDrive/Рабочий стол/файлы универ/3 СЕМЕСТР/РКЧИР/ПР №12/descending.png" width="28px" height="28px">
+                    <img src="/allPNG/descending.png" width="28px" height="28px">
                 </button>
         
                 <button onclick="ascendingSort(products)">
-                    <img src="C:/Users/eliza/OneDrive/Рабочий стол/файлы универ/3 СЕМЕСТР/РКЧИР/ПР №12/ascending.png" width="28px" height="28px">
+                    <img src="/allPNG/ascending.png" width="28px" height="28px">
                 </button>
             </div>
         </div>
