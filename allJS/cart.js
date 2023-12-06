@@ -29,24 +29,24 @@ function updateCartDisplay() {
     for (let product of cart.selectedProducts) {
         container.innerHTML += `    
         <div class="cart-item" id="${cart.selectedProducts.indexOf(product)}">
-            <img src="C:/Users/eliza/OneDrive/Рабочий стол/файлы универ/3 СЕМЕСТР/РКЧИР/ПР №12/${product.name}.jpg" width="150">
+            <img src="/allPNG/${product.name}.jpg" width="150">
             <p class="name">${product.name}</p>
 
             <div class="quantity-container">
               <button class="minus" onclick="decreaseQuantity('${product.name}')">
-                <img src="C:/Users/eliza/OneDrive/Рабочий стол/файлы универ/3 СЕМЕСТР/РКЧИР/ПР №12/minus.png" width="28px" height="28px">
+                <img src="/allPNG/minus.png" width="28px" height="28px">
               </button>
 
               <p class="quantity">${product.quantity}</p>
 
               <button class="plus" onclick="increaseQuantity('${product.name}')">
-                <img src="C:/Users/eliza/OneDrive/Рабочий стол/файлы универ/3 СЕМЕСТР/РКЧИР/ПР №12/plus.png" width="28px" height="28px">
+                <img src="/allPNG/plus.png" width="28px" height="28px">
               </button>
             </div>
 
             <div class="delete">
               <button onclick="deleteInCart('${product.name}')">
-                <img src="C:/Users/eliza/OneDrive/Рабочий стол/файлы универ/3 СЕМЕСТР/РКЧИР/ПР №12/bin.png" width="30px" height="30px">
+                <img src="/allPNG/bin.png" width="30px" height="30px">
               </button>
             </div>
 
@@ -198,5 +198,5 @@ function order(){
     let sum = formatPrice(cart.totalAmount);
     localStorage.setItem('sum', sum)
 
-    window.location.href = 'order.html';
+    window.location.href = '/allHTML/order.html';
 }
