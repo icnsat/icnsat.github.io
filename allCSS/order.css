@@ -65,16 +65,10 @@ main{
     border-radius: 25px;
 }
 .form1 .input_box_button{
-    background-color: transparent;
     width: 150px;
     margin-top: 2%;
-}
-.form1 .input_box_button input{
-    width: 100%;
     background: rgba(255, 255, 255, 0.73);
     border: none;
-    outline: none;
-    padding: 4% 7%;
     border-radius: 25px;
     color:#252525;
     height: 30px;
