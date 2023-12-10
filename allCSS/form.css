@@ -155,7 +155,14 @@ main{
     }
 }
 
-
+@media screen and (max-width: 1050px){
+    .form1 h2{
+        font-size: 1.4rem;
+    }
+    .form1 h2::before{
+        width: 17rem;
+    }
+}
 @media screen and (max-width: 850px){
     .contact_form {
         width: 60%;
@@ -189,3 +196,5 @@ main{
         font-size: 0.8rem;
     }
 }
+
+
