@@ -204,6 +204,9 @@ main{
     .login_form label, .input_box_button input, .login_form p{
         font-size: 0.6rem;
     }
+    .order_sum{
+        font-size: 0.8rem;
+    }
 }
 
 
