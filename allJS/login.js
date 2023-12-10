@@ -11,5 +11,5 @@ function login(){
         }
     }
     alert("Вы успешно вошли в аккаунт");
-    window.location.href = '/allHTML/main.html';
+    window.location.href = '/index.html';
 }
