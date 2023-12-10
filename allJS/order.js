@@ -11,7 +11,7 @@ function order(){
         }
     }
     alert("Заказ оформлен. Ожидайте письмо на электронную почту.");
-    window.location.href = '/allHTML/main.html';
+    window.location.href = '/index.html';
 }
 
 
