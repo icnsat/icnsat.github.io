@@ -1,5 +1,4 @@
 'use strict'
-'use strict'
 
 function submit(){
     var form = document.getElementById("form_contact");
@@ -12,5 +11,5 @@ function submit(){
         }
     }
     alert("Форма отправлена");
-    window.location.href = '/allHTML/main.html';
+    window.location.href = '/index.html';
 }
