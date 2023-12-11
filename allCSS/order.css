@@ -70,7 +70,7 @@ main{
     background: rgba(255, 255, 255, 0.73);
     border: none;
     border-radius: 25px;
-    color:#252525;
+    color: #252525;
     height: 30px;
 }
 .form1 input::placeholder{
