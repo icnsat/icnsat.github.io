@@ -22,8 +22,6 @@ var products = [
     }
 ];
 
-var filteredProducts = [];
-
 function formatPrice(price) {
     if (price == 0) {
         return "0 ₽"
