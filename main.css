@@ -1,6 +1,13 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Comfortaa', cursive;
+}
 header{
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    height:  65px;
     background-color: rgb(233, 215, 192);
 }
 header a{
@@ -14,13 +21,33 @@ header a:hover{
 header .menu{
     display:flex;
     flex-direction: column;
-    justify-content: space-around;
+    align-items: center;
 }
+.menu_up, .menu_down{
+    display: flex;
+}
+.menu_up span, .menu_down span {
+    cursor: pointer;
+    display: block;
+    padding: 5px 20px;
+}
+header h1{
+    padding-left: 10px;
+}
+.menu_up span:hover, .menu_down span:hover{
+    background: #DEB887;
+    transition: 0.5s;
+}
+header ul li a:active{
+    background:#D2691E;
+}
+
 h2{
     text-align: center;
 }
 article div{
     background-color: blanchedalmond;
+    padding: 10px;
 }
 footer div{
     background-color: rgb(250, 223, 182);
