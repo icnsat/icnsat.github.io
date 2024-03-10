@@ -1,0 +1,27 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(233, 215, 192);
+}
+header a{
+    text-decoration: none; 
+    color: rgb(0, 0, 0);
+
+}
+header a:hover{
+    color: rgb(78, 41, 5);
+}
+header .menu{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+h2{
+    text-align: center;
+}
+article div{
+    background-color: blanchedalmond;
+}
+footer div{
+    background-color: rgb(250, 223, 182);
+}
