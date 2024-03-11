@@ -44,6 +44,7 @@ header ul li a:active{
 
 h2{
     text-align: center;
+    margin-bottom: 1rem;
 }
 article div{
     background-color: blanchedalmond;
@@ -51,4 +52,18 @@ article div{
 }
 footer div{
     background-color: rgb(250, 223, 182);
+    padding: 1.5rem;
+}
+.achievements > li{
+    margin: 1rem;
+}
+.problems ul, .why_consult ul{
+    list-style-type: circle;
+    margin: 1rem;
+}
+.why_consult li, .Prices li{
+    margin-top: 1rem;
+}
+.Prices ul{
+    margin: 1rem;
 }
